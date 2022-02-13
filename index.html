@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">;
+    <meta name='viewport' content='width=device-width, initial-scale=1'>;
+    <title>Our Menu</title>;
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            margin-bottom: 20px;
+        }
+
+        p {
+            padding: 15px 5px 0px 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            position: relative;
+        }
+
+        .section {
+            /* boxes 1 to 3 */
+            background-color: lightgrey;
+            border: 2px solid black;
+            margin-top: 20px;
+            margin-right: 20px;
+            padding: 3px;
+            text-align: justify;
+            position: relative;
+        }
+
+        span {
+            font-size: 20px;
+            width: 150px;
+            /* border for boxheader*/
+            border: 2px solid black;
+            font-weight: bold;
+            text-align: center;
+            float: right;
+            top: 0;
+            right: 0;
+            margin: 0;
+            position: absolute;
+        }
+
+        #boxheader1 {
+            /*chicken*/
+            background-color: rgb(150, 250, 150);
+            color: black;
+        }
+
+        #boxheader2 {
+            /*beef*/
+            background-color: rgb(207, 1, 1);
+            color: black;
+        }
+
+        #boxheader3 {
+            /*seafood*/
+            background-color: rgb(243, 222, 127);
+            color: black;
+        }
+
+
+        .row {
+            /* also for 2nd row to go 100% width*/
+            width: 100%;
+        }
+
+        /* Desktop view */
+
+        @media (min-width: 992px) {
+
+            .col-lg-4 {
+                width: 33.33%;
+                float: left;
+            }
+        }
+
+        /* Tablet view */
+        @media (min-width: 768px) and (max-width: 991px) {
+
+            .col-md-6 {
+                width: 50%;
+                float: left;
+            }
+
+            .col-md-12 {
+
+                width: 100%;
+
+                float: left;
+            }
+        }
+
+        /* Mobilew view */
+        @media (max-width: 767px) {
+
+            .col-sx-12 {
+                float: left;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Our Menu</h1>
+    <div class='row'>
+        <div class='col-lg-4 col-md-6 sx-12'>
+            <div class='section'>
+                <span id='boxheader1'>Chicken</span>
+                <p>Aenean sagittis gravida magna, in venenatis purus porta vitae. Sed tempor nibh vel sapien elementum
+                    aliquet. In vitae molestie sem. Vestibulum suscipit venenatis molestie. Mauris quis ex a arcu
+                    faucibus interdum ut in neque. Pellentesque condimentum sapien sit amet molestie molestie.
+                    Vestibulum nisi tortor, vulputate ac massa ac, euismod consectetur dolor. </p>
+            </div>
+        </div>
+        <div class='col-lg-4 col-md-6 sx-12'>
+            <div class='section'>
+                <span id='boxheader2'>Beef</span>
+                <p>Aenean sagittis gravida magna, in venenatis purus porta vitae. Sed tempor nibh vel sapien elementum
+                    aliquet. In vitae molestie sem. Vestibulum suscipit venenatis molestie. Mauris quis ex a arcu
+                    faucibus interdum ut in neque. Pellentesque condimentum sapien sit amet molestie molestie.
+                    Vestibulum nisi tortor, vulputate ac massa ac, euismod consectetur dolor. </p>
+            </div>
+        </div>
+        <div class='col-lg-4 col-md-12 sx-12'>
+            <div class='section'>
+                <span id='boxheader3'>Seafood</span>
+                <p>Aenean sagittis gravida magna, in venenatis purus porta vitae. Sed tempor nibh vel sapien elementum
+                    aliquet. In vitae molestie sem. Vestibulum suscipit venenatis molestie. Mauris quis ex a arcu
+                    faucibus interdum ut in neque. Pellentesque condimentum sapien sit amet molestie molestie.
+                    Vestibulum nisi tortor, vulputate ac massa ac, euismod consectetur dolor. </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
